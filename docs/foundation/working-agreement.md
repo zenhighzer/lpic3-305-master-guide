@@ -28,14 +28,14 @@ Editorial improvements, additional background information and community-oriented
 
 # Project Roles
 
-## Author (ChatGPT)
+## Author (AI)
 
 Responsible for:
 
 - explaining technical concepts
 - maintaining objective alignment
 - ensuring technical correctness
-- providing reviewable documentation
+- producing complete documentation
 - identifying exam-relevant topics
 - admitting and correcting mistakes
 
@@ -75,11 +75,7 @@ Examples include:
 - Official manuals
 - Standards
 
-The guide must be corrected accordingly.
-
-Never modify the official meaning to fit the guide.
-
-Always modify the guide to fit the official source.
+Always modify the guide to match the official source.
 
 ---
 
@@ -96,9 +92,11 @@ Readers must always be able to distinguish between official exam requirements an
 
 ---
 
-## 4. If Unsure → Verify
+## 4. Verify Before Claiming
 
 Whenever uncertainty exists regarding an exam-relevant topic, the information must be verified before it is documented.
+
+Whenever uncertainty exists regarding tooling, integrations or workflow capabilities, **verify them before recommending them**.
 
 Guessing is not acceptable.
 
@@ -106,9 +104,9 @@ Guessing is not acceptable.
 
 ## 5. No Hallucinations
 
-Exam-relevant facts must never be invented, assumed or completed from memory if reliable verification is possible.
+Technical facts, product capabilities and project decisions must never be invented.
 
-Accuracy is always preferred over speed.
+If something is uncertain, explicitly state that it is uncertain.
 
 ---
 
@@ -134,6 +132,8 @@ Every piece of information should exist in exactly one location.
 
 Avoid duplicate documentation whenever possible.
 
+The repository is the authoritative source for the project.
+
 ---
 
 ## 8. Incremental Development
@@ -144,23 +144,9 @@ Avoid mixing unrelated topics within the same commit.
 
 ---
 
-## 9. Repository State
-
-At the beginning of each working session, the current Git commit hash should be provided.
-
-All discussions, reviews and changes refer to this repository state.
-
-The Git repository is the single source of truth for project files.
-
-The author must only claim repository synchronization when the current repository state has actually been verified.
-
-If repository access is unavailable or unreliable, the latest provided commit hash or file content is used as the temporary working state.
-
----
-
 # Writing Rules
 
-## 10. One Objective at a Time
+## 9. One Objective at a Time
 
 Only one LPIC objective is worked on at any given time.
 
@@ -168,21 +154,15 @@ A new objective starts only after the previous one has been completed and review
 
 ---
 
-## 11. Existing Knowledge First
+## 10. Existing Knowledge First
 
-Whenever possible, new concepts should be explained using knowledge that is already familiar to the learner.
+Whenever possible, new concepts should build upon knowledge introduced in previous chapters.
 
-Examples include:
-
-- Proxmox VE
-- Docker
-- VMware
-- Linux
-- DevOps
+Avoid re-explaining concepts that are already covered unless required for understanding.
 
 ---
 
-## 12. No Silent Assumptions
+## 11. No Silent Assumptions
 
 Technical terms must be introduced before they are used.
 
@@ -190,7 +170,7 @@ Do not assume previous knowledge without explanation.
 
 ---
 
-## 13. 80/20 Principle
+## 12. 80/20 Principle
 
 Focus first on the knowledge that provides the highest value for passing the exam.
 
@@ -198,21 +178,27 @@ Deep dives are welcome but must be clearly identified as additional information.
 
 ---
 
-## 14. Exam First
+## 13. Exam First
 
-The primary goal of Version **1.x** is to pass the LPIC-3 305 certification within the planned time frame.
+The primary goal of Version **1.x** is to pass the LPIC-3 305 certification.
 
 Whenever there is a trade-off between editorial perfection and exam preparation, **exam preparation always takes precedence**.
 
-Improvements that do not significantly increase the likelihood of passing the exam are deferred to Version **2.0**.
-
 ---
 
-## 15. Labs only when Useful
+## 14. Labs only when Useful
 
 Hands-on labs are included only if they significantly improve understanding.
 
 Not every objective requires a practical lab.
+
+---
+
+## 15. Documentation First
+
+When documentation is requested, the first response should contain documentation.
+
+Workflow discussions should only occur when they materially improve productivity.
 
 ---
 
@@ -224,20 +210,16 @@ Every technical statement may be questioned.
 
 Critical review improves the quality of the guide.
 
-Disagreement is part of the review process.
-
 ---
 
 ## 17. Transparency
 
-Whenever information is based on interpretation, experience or best practices rather than the official objectives, this must be clearly indicated.
+Clearly distinguish between:
 
-Readers should always know whether a statement is:
-
-- an official requirement
-- a technical explanation
-- an exam tip
-- a recommendation
+- official requirements
+- explanations
+- exam tips
+- recommendations
 - practical experience
 
 ---
@@ -246,7 +228,7 @@ Readers should always know whether a statement is:
 
 Mistakes are corrected openly.
 
-There is no attempt to justify incorrect information.
+Do not defend incorrect information.
 
 Accuracy is more important than ego.
 
@@ -262,11 +244,9 @@ An objective is considered complete only after both project members agree that i
 
 Each review consists of one complete review pass.
 
-All requested changes must be communicated together.
+All requested changes should be collected and applied together.
 
-Subsequent review rounds are limited to verifying previously requested changes.
-
-New review comments may only be introduced if:
+Additional review comments should only be introduced if:
 
 - a factual error was previously overlooked
 - a requested change introduced a new issue
@@ -287,13 +267,33 @@ Editorial perfection is intentionally postponed to Version **2.0**.
 
 ## 22. Focus
 
-Avoid unnecessary discussions about repository structure, tooling or implementation details.
+Avoid unnecessary discussions about tooling, repository structure or implementation details.
 
 The primary objective is learning LPIC-3 305.
 
 Whenever focus is lost, immediately return to the current objective.
 
-Questions that are interesting but not exam-relevant should be recorded as ideas for Version **2.0**, not implemented immediately.
+---
+
+# AI Instructions
+
+Any AI assistant working on this repository must first read:
+
+- WORKING-AGREEMENT.md
+
+The repository itself defines:
+
+- writing style
+- chapter structure
+- review process
+- definition of done
+- project philosophy
+
+No additional instructions should contradict this document.
+
+If a capability is uncertain (tool support, IDE integration, repository access, automation, etc.), verify it before recommending it.
+
+Never present assumptions as facts.
 
 ---
 
@@ -327,4 +327,4 @@ Version **1.x** is considered successful when:
 - the learner understands the concepts instead of memorizing answers
 - the learner passes the LPIC-3 305 certification
 
-Version **2.0** may improve style, diagrams, additional labs, wording and community-oriented documentation without changing the technical correctness established in Version **1.x**.
+Version **2.0** may improve wording, style, diagrams, additional labs and editorial quality without changing the technical correctness established in Version **1.x**.
