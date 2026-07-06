@@ -1,8 +1,8 @@
 # Working Agreement
 
-**Version:** 1.1  
+**Version:** 1.2  
 **Status:** Active  
-**Last Updated:** 2026-07-03
+**Last Updated:** 2026-07-06
 
 > ## Project Governance
 >
@@ -144,9 +144,23 @@ Avoid mixing unrelated topics within the same commit.
 
 ---
 
+## 9. Repository State
+
+At the beginning of each working session, the current Git commit hash should be provided.
+
+All discussions, reviews and changes refer to this repository state.
+
+The Git repository is the single source of truth for project files.
+
+The author must only claim repository synchronization when the current repository state has actually been verified.
+
+If repository access is unavailable or unreliable, the latest provided commit hash or file content is used as the temporary working state.
+
+---
+
 # Writing Rules
 
-## 9. One Objective at a Time
+## 10. One Objective at a Time
 
 Only one LPIC objective is worked on at any given time.
 
@@ -154,7 +168,7 @@ A new objective starts only after the previous one has been completed and review
 
 ---
 
-## 10. Existing Knowledge First
+## 11. Existing Knowledge First
 
 Whenever possible, new concepts should be explained using knowledge that is already familiar to the learner.
 
@@ -168,7 +182,7 @@ Examples include:
 
 ---
 
-## 11. No Silent Assumptions
+## 12. No Silent Assumptions
 
 Technical terms must be introduced before they are used.
 
@@ -176,7 +190,7 @@ Do not assume previous knowledge without explanation.
 
 ---
 
-## 12. 80/20 Principle
+## 13. 80/20 Principle
 
 Focus first on the knowledge that provides the highest value for passing the exam.
 
@@ -184,7 +198,7 @@ Deep dives are welcome but must be clearly identified as additional information.
 
 ---
 
-## 13. Exam First
+## 14. Exam First
 
 The primary goal of Version **1.x** is to pass the LPIC-3 305 certification within the planned time frame.
 
@@ -194,7 +208,7 @@ Improvements that do not significantly increase the likelihood of passing the ex
 
 ---
 
-## 14. Labs only when Useful
+## 15. Labs only when Useful
 
 Hands-on labs are included only if they significantly improve understanding.
 
@@ -204,7 +218,7 @@ Not every objective requires a practical lab.
 
 # Review Process
 
-## 15. Challenge Everything
+## 16. Challenge Everything
 
 Every technical statement may be questioned.
 
@@ -214,7 +228,7 @@ Disagreement is part of the review process.
 
 ---
 
-## 16. Transparency
+## 17. Transparency
 
 Whenever information is based on interpretation, experience or best practices rather than the official objectives, this must be clearly indicated.
 
@@ -228,7 +242,7 @@ Readers should always know whether a statement is:
 
 ---
 
-## 17. Admit Mistakes
+## 18. Admit Mistakes
 
 Mistakes are corrected openly.
 
@@ -238,13 +252,13 @@ Accuracy is more important than ego.
 
 ---
 
-## 18. Review before Complete
+## 19. Review before Complete
 
 An objective is considered complete only after both project members agree that it satisfies the defined quality standards.
 
 ---
 
-## 19. Single Review Cycle
+## 20. Single Review Cycle
 
 Each review consists of one complete review pass.
 
@@ -261,7 +275,7 @@ New review comments may only be introduced if:
 
 # Project Philosophy
 
-## 20. Quality over Speed
+## 21. Quality over Speed
 
 The goal is not to finish quickly.
 
@@ -271,7 +285,7 @@ Editorial perfection is intentionally postponed to Version **2.0**.
 
 ---
 
-## 21. Focus
+## 22. Focus
 
 Avoid unnecessary discussions about repository structure, tooling or implementation details.
 
