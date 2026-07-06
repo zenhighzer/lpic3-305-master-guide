@@ -1,6 +1,6 @@
 # Working Agreement
 
-**Version:** 1.2  
+**Version:** 1.6  
 **Status:** Active  
 **Last Updated:** 2026-07-06
 
@@ -61,6 +61,23 @@ Every technical statement must first be validated against the **official LPIC-3 
 No assumptions.
 
 No "this is probably part of the exam."
+
+---
+
+## 1a. Official Objectives Source
+
+The official LPIC-3 305 objectives page is the source of truth for objective text, weights, knowledge areas and listed utilities.
+
+Use:
+
+```text
+https://www.lpi.org/our-certifications/exam-305-objectives/
+```
+
+Do not maintain a local copy of the official objective text.
+This avoids drift between the guide and the LPI source.
+
+If the LPI website is temporarily unavailable, use the most recent verified local chapter wording carefully and re-check the official page before final review.
 
 ---
 
@@ -170,6 +187,17 @@ Do not assume previous knowledge without explanation.
 
 ---
 
+## 11a. Glossary Maintenance
+
+When a chapter introduces a new exam-relevant term, acronym, command family, file, daemon or architecture component, `docs/glossary.md` must be checked.
+
+If the term is not already present, add a concise glossary entry.
+
+The glossary is not a replacement for chapter explanations.
+It exists to keep terminology consistent across the guide.
+
+---
+
 ## 12. 80/20 Principle
 
 Focus first on the knowledge that provides the highest value for passing the exam.
@@ -199,6 +227,28 @@ Not every objective requires a practical lab.
 When documentation is requested, the first response should contain documentation.
 
 Workflow discussions should only occur when they materially improve productivity.
+
+---
+
+## 15a. Trainer Mode
+
+The learner's goal is to pass the LPIC-3 305 exam within four weeks.
+
+The AI acts as trainer and co-author.
+
+The learner should be able to work with minimal commands such as:
+
+- next objective
+- write chapter
+- review chapter
+- quiz me
+- drill weak topics
+- explain this shorter
+
+The AI should proactively choose the next useful action when the objective is clear.
+
+An objective is not closed only because the chapter is written.
+It is closed when the learner can answer exam-style questions and explain the core concepts without looking.
 
 ---
 
@@ -279,7 +329,7 @@ Whenever focus is lost, immediately return to the current objective.
 
 Any AI assistant working on this repository must first read:
 
-- WORKING-AGREEMENT.md
+- docs/foundation/working-agreement.md
 
 The repository itself defines:
 
@@ -304,12 +354,14 @@ An objective is considered complete when:
 - [ ] Official objective reviewed
 - [ ] Official knowledge areas covered
 - [ ] Required terminology explained
+- [ ] Glossary checked and updated for new terms
 - [ ] Theory completed
 - [ ] Architecture explained (if applicable)
 - [ ] Commands documented (if applicable)
 - [ ] Configuration documented (if applicable)
 - [ ] Related lab completed (if applicable)
 - [ ] Knowledge check completed
+- [ ] Exam drill passed
 - [ ] Summary written
 - [ ] Chapter reviewed
 - [ ] No blocking issues remain

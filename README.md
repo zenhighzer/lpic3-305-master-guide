@@ -1,47 +1,62 @@
 # LPIC-3 305 Master Guide
 
-> Objective-based study guide for LPIC-3 Exam 305 (Virtualization and Containerization)
+Objective-based training guide for LPIC-3 Exam 305: Virtualization and Containerization.
 
 ## Goal
 
-This repository contains a structured study guide for the LPIC-3 305 certification.
+This repository is a study system for passing the LPIC-3 305 certification.
 
-Unlike many existing learning resources, this guide is **strictly based on the official LPIC-3 305 objectives**.
+The guide is built one official objective at a time.
+The official LPI Exam 305 objectives page is the source of truth for objective text, weights, knowledge areas and listed utilities:
 
-The goals are:
+```text
+https://www.lpi.org/our-certifications/exam-305-objectives/
+```
 
-- cover every official objective
-- distinguish official objectives from explanations and exam tips
-- provide practical labs where they add value
-- build understanding instead of memorization
-- produce a reusable reference guide
+Version 1.x focuses on exam readiness.
+Editorial polish and broader reference material are secondary.
 
 ---
 
-## Design Principles
+## Training Principles
 
-### Objective First
+- verify every objective against the official LPI page
+- cover every official knowledge area and listed utility
+- explain required terminology before using it
+- keep the focus on passing LPIC-3 305
+- include labs only when they improve understanding
+- update `docs/glossary.md` when new exam-relevant terms are introduced
+- review each chapter before considering the objective complete
 
-Every chapter starts with the official objective before any explanation is given.
+The working agreement defines the project rules:
 
-### No Hidden Assumptions
+```text
+docs/foundation/working-agreement.md
+```
 
-Every statement belongs to exactly one category:
+---
 
-| Icon | Meaning |
-|------|---------|
-| 🟢 | Official LPIC Objective |
-| 🟡 | Exam Tip |
-| 🔵 | Background / Additional Explanation |
-| 🔴 | Lab |
+## Workflow
 
-### Review Driven
+Each objective follows this path:
 
-Every chapter is reviewed before it is considered complete.
+1. Check the official LPI Exam 305 objective.
+2. Write or update the chapter using `docs/foundation/chapter_prompt.md`.
+3. Add glossary entries for new exam-relevant terms.
+4. Add a lab only if it materially improves understanding.
+5. Review the chapter using `docs/foundation/review_prompt.md` and `docs/foundation/review_process.md`.
+6. Drill the objective using `docs/foundation/exam_drill_prompt.md`.
+7. Update `docs/foundation/progress.md`.
+8. Close the objective only when no blocking gaps remain and the drill is passed.
 
-### Practice where it matters
+The AI assistant acts as trainer and co-author.
+The learner reviews, challenges and approves completed objectives.
 
-Hands-on labs are only used where they significantly improve understanding.
+For the four-week training plan, use:
+
+```text
+docs/foundation/study_plan_4_weeks.md
+```
 
 ---
 
@@ -49,33 +64,40 @@ Hands-on labs are only used where they significantly improve understanding.
 
 ```text
 docs/
-    foundation/
-    351/
-    352/
-    353/
-    labs/
-    cheatsheets/
-    exams/
+  foundation/
+    working-agreement.md
+    chapter_prompt.md
+    review_prompt.md
+    review_process.md
+    exam_drill_prompt.md
+    study_plan_4_weeks.md
+    progress.md
+  351/
+    351.1.md
+    351.2.md
+    351.3.md
+  labs/
+    lab01-linux-virtualization-stack.md
+  glossary.md
 ```
 
 ---
 
-## Learning Strategy
+## Definition of Done
 
-Learning follows the official objectives.
+An objective is complete when:
 
-Each objective consists of:
+- the official objective was reviewed
+- all official knowledge areas and listed utilities are covered
+- terminology is explained and reflected in the glossary
+- required theory, architecture, commands and configuration are documented
+- useful labs and knowledge checks are complete
+- exam drill is passed
+- the chapter has been reviewed
+- no blocking issues remain
+- both project members approve closure
 
-1. Official Objective
-2. Theory
-3. Architecture
-4. Commands
-5. Configuration
-6. Lab (if applicable)
-7. Exam Pitfalls
-8. Practice Questions
-9. Summary
-10. Review
+The full Definition of Done lives in `docs/foundation/working-agreement.md`.
 
 ---
 
@@ -83,8 +105,8 @@ Each objective consists of:
 
 Current Version:
 
-**v0.1 Foundation**
+**Version 1.x - Exam Preparation**
 
 Project Status:
 
-🟨 In Progress
+In Progress
