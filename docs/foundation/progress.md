@@ -19,8 +19,8 @@ Confidence values:
 
 | Objective | Chapter | Status | Lab | Drill | Confidence | Weak Topics |
 |-----------|---------|--------|-----|-------|------------|-------------|
-| 351.1 | docs/351/351.1.md | reviewed | done | pending | medium | Start here |
-| 351.2 | docs/351/351.2.md | reviewed | n/a | pending | medium |  |
+| 351.1 | docs/351/351.1.md | drilled | done | passed | high | Simulation wording, awareness tools |
+| 351.2 | docs/351/351.2.md | drilled | n/a | passed | high | XenStore scope, xl dmesg, xl.conf vs xl.cfg |
 | 351.3 | docs/351/351.3.md | reviewed | done | pending | medium |  |
 | 351.4 | docs/351/351.4.md | todo | pending | pending | low |  |
 | 351.5 | docs/351/351.5.md | todo | pending | pending | low |  |
@@ -37,10 +37,10 @@ Confidence values:
 
 # Current Focus
 
-Current objective: `351.1`
+Current objective: `351.3`
 
 Next action:
 
 ```text
-Run exam drill for 351.1, then move to 351.2.
+Drill 351.3.
 ```
