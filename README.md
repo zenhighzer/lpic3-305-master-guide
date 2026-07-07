@@ -1,8 +1,8 @@
 # LPIC-3 305 Master Guide
 
-Objective-based training guide for LPIC-3 Exam 305: Virtualization and Containerization.
+Objective-based study guide for LPIC-3 Exam 305: Virtualization and Containerization.
 
-## Goal
+## What Is This?
 
 This repository is a study system for passing the LPIC-3 305 certification.
 
@@ -18,45 +18,35 @@ Editorial polish and broader reference material are secondary.
 
 ---
 
-## Training Principles
+## Who Is It For?
 
-- verify every objective against the official LPI page
-- cover every official knowledge area and listed utility
-- explain required terminology before using it
-- keep the focus on passing LPIC-3 305
-- include labs only when they improve understanding
-- update `docs/glossary.md` when new exam-relevant terms are introduced
-- review each chapter before considering the objective complete
+This project is for a learner preparing for LPIC-3 305 who wants:
 
-The working agreement defines the project rules:
-
-```text
-docs/foundation/working-agreement.md
-```
+- objective-based study chapters
+- practical Linux virtualization and containerization explanations
+- exam-focused labs where they add value
+- glossary support for important terms
+- a clear path from learning to review to exam drills
 
 ---
 
-## Workflow
+## Where Do I Start?
 
-Each objective follows this path:
+Start with:
 
-1. Check the official LPI Exam 305 objective.
-2. Write or update the chapter using `docs/foundation/chapter_prompt.md`.
-3. Add glossary entries for new exam-relevant terms.
-4. Add a lab only if it materially improves understanding.
-5. Review the chapter using `docs/foundation/review_prompt.md` and `docs/foundation/review_process.md`.
-6. Drill the objective using `docs/foundation/exam_drill_prompt.md`.
-7. Update `docs/foundation/progress.md`.
-8. Close the objective only when no blocking gaps remain and the drill is passed.
+1. `docs/351/351.1.md`
+2. `docs/foundation/study_plan_4_weeks.md`
+3. `docs/foundation/progress.md`
 
-The AI assistant acts as trainer and co-author.
-The learner reviews, challenges and approves completed objectives.
+The recommended learning order is the official objective order:
 
-For the four-week training plan, use:
-
-```text
-docs/foundation/study_plan_4_weeks.md
-```
+1. `351.1` Virtualization Concepts and Theory
+2. `351.2` Xen
+3. `351.3` QEMU
+4. `351.4` Libvirt Virtual Machine Management
+5. `351.5` Virtual Machine Disk Image Management
+6. `352.x` Container Virtualization
+7. `353.x` Cloud Management Tools
 
 ---
 
@@ -65,21 +55,38 @@ docs/foundation/study_plan_4_weeks.md
 ```text
 docs/
   foundation/
-    working-agreement.md
-    chapter_prompt.md
-    review_prompt.md
-    review_process.md
-    exam_drill_prompt.md
-    study_plan_4_weeks.md
-    progress.md
   351/
-    351.1.md
-    351.2.md
-    351.3.md
   labs/
-    lab01-linux-virtualization-stack.md
   glossary.md
 ```
+
+---
+
+## Study Method
+
+For each objective:
+
+1. Read the chapter.
+2. Learn the listed commands, files and terms.
+3. Do the lab if one exists.
+4. Answer the knowledge check.
+5. Drill the topic until you can explain it without notes.
+6. Update progress.
+
+---
+
+## Project Rules
+
+The project rules live in `docs/foundation/working-agreement.md`.
+
+The short version:
+
+- official LPI objectives win
+- exam readiness comes first
+- one objective at a time
+- no local copy of the official objective text
+- update the glossary for new exam-relevant terms
+- close an objective only after review and drill
 
 ---
 

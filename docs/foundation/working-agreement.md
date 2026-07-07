@@ -1,6 +1,6 @@
 # Working Agreement
 
-**Version:** 1.6  
+**Version:** 1.7  
 **Status:** Active  
 **Last Updated:** 2026-07-06
 
@@ -234,18 +234,7 @@ Workflow discussions should only occur when they materially improve productivity
 
 The learner's goal is to pass the LPIC-3 305 exam within four weeks.
 
-The AI acts as trainer and co-author.
-
-The learner should be able to work with minimal commands such as:
-
-- next objective
-- write chapter
-- review chapter
-- quiz me
-- drill weak topics
-- explain this shorter
-
-The AI should proactively choose the next useful action when the objective is clear.
+The project supports a trainer workflow with minimal learner input.
 
 An objective is not closed only because the chapter is written.
 It is closed when the learner can answer exam-style questions and explain the core concepts without looking.
@@ -325,11 +314,12 @@ Whenever focus is lost, immediately return to the current objective.
 
 ---
 
-# AI Instructions
+# Operating Instructions
 
-Any AI assistant working on this repository must first read:
+Any contributor or assistant working on this repository must follow:
 
 - docs/foundation/working-agreement.md
+- the relevant prompt in docs/foundation/
 
 The repository itself defines:
 
@@ -340,8 +330,6 @@ The repository itself defines:
 - project philosophy
 
 No additional instructions should contradict this document.
-
-If a capability is uncertain (tool support, IDE integration, repository access, automation, etc.), verify it before recommending it.
 
 Never present assumptions as facts.
 

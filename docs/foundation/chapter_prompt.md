@@ -2,40 +2,28 @@
 
 Create a new LPIC-3 305 study guide chapter for the current objective.
 
-Before writing anything, read and follow:
+Read first:
 
 - docs/foundation/working-agreement.md
 - the official LPI Exam 305 objectives page
-- the previous completed chapter in the current objective sequence
 - docs/glossary.md
-- README.md (if present)
+- the previous completed chapter, if available
 
-The chapter must follow the established writing style, structure and level of detail used throughout the repository.
+Task:
 
-Requirements:
+- write the complete chapter for the current objective
+- stay inside the current LPIC-3 305 objective
+- follow the established chapter style
+- explain required terms before using them
+- include only exam-relevant commands, files and examples
+- add a lab only when it improves understanding
+- update `docs/glossary.md` for new exam-relevant terms
+- update `docs/foundation/progress.md` if chapter status changes
 
-1. Verify the current objective against the official LPI Exam 305 objectives page before writing.
-2. Cover every official knowledge area.
-3. Cover every listed command, utility, file, daemon or concept.
-4. Explain all required terminology before using it.
-5. Check `docs/glossary.md` and add concise entries for new exam-relevant terms.
-6. Build upon concepts introduced in previous chapters instead of repeating them.
-7. Do not introduce topics belonging to later objectives unless they are required for understanding and clearly marked as background.
-8. Focus on passing the LPIC-3 exam rather than encyclopedic completeness.
-9. Use practical examples where appropriate.
-10. Include commands only when they are relevant to the objective.
-11. Use consistent formatting, headings, tables and callout boxes.
-12. Include ASCII diagrams where they significantly improve understanding.
-13. Add a Discovery Lab only if it provides meaningful hands-on experience.
-14. End the chapter with:
-    - Knowledge Check
-    - Summary
-    - Review Checklist
+Required ending sections:
 
-The Review Checklist must reflect the objective-specific coverage and the project Definition of Done, including glossary maintenance and the exam drill.
-
-Keep the chapter technically accurate, practical and easy to review.
-
-Treat the result as if it will become part of a published technical book.
+- Knowledge Check
+- Summary
+- Review Checklist
 
 Write the complete chapter directly into the current file.
